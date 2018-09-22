@@ -1,38 +1,65 @@
-*{
-	boder: 0;
-	padding: 0;
-	margin: 0; 
-
+* {
+    boder: 0;
+    padding: 0;
+    margin: 0;
 }
 
 
 @mixin rotate($b) {
-  -webkit-transform: rotate($b);
-  -moz-tranform: rotate($b);
-  -ms-tranform: rotate($b);
-  transform: rotate($b);
+    -webkit-transform: rotate($b);
+    -moz-tranform: rotate($b);
+    -ms-tranform: rotate($b);
+    transform: rotate($b);
 }
 
 
-body{
-	background: #F3D8C7;
-}
-.container>*{
-	position: absolute;
+body {
+    background: #F3D8C7;
 }
 
-.container{
-	
-	margin: 0 auto; 
-	width: 350px;
-	height: 180px;
-	transform: scale(0.7);
+.container>* {
+    position: absolute;
 }
 
-.plate{
-	background-color: #FFF;
-	width: 15rem;
-	height:15rem; 
-	border-radius:100%;
-	box-shadow:20px 15px 0  rgba(#666666, 0.3);
+.container {
+    margin: 0 auto;
+    width: 350px;
+    height: 180px;
+    transform: scale(0.7);
+}
+
+.plate {
+    z-index: -1;
+    position: absolute;
+    background-color: #FFF;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+    box-shadow: 20px 15px 0 rgba(#666666, 0.3);
+    margin:{
+    left: -2.5rem;
+    top:-1.9rem;
+    }
+}
+
+.pie {
+	margin-top: 5rem;
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    background: #F9C38A;
+    border-radius: 20%;
+    &:before, &:after{
+    	content: '';
+    	position: absolute;
+    	@extend .pie
+    }
+    &:before{
+    	@include rotate(30deg);
+    	margin-top:-.5rem;
+    }
+    &:after{
+    	@include rotate(60deg);
+    	margin-top:-.5rem;
+    }
 }

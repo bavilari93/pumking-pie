@@ -16,10 +16,37 @@ body {
   transform: scale(0.7); }
 
 .plate {
+  z-index: -1;
+  position: absolute;
   background-color: #FFF;
   width: 15rem;
   height: 15rem;
   border-radius: 100%;
-  box-shadow: 20px 15px 0 rgba(102, 102, 102, 0.3); }
+  box-shadow: 20px 15px 0 rgba(102, 102, 102, 0.3);
+  margin-left: -2.5rem;
+  margin-top: -1.9rem; }
+
+.pie, .pie:before, .pie:after {
+  margin-top: 5rem;
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  background: #F9C38A;
+  border-radius: 20%; }
+  .pie:before, .pie:after {
+    content: '';
+    position: absolute; }
+  .pie:before {
+    -webkit-transform: rotate(30deg);
+    -moz-tranform: rotate(30deg);
+    -ms-tranform: rotate(30deg);
+    transform: rotate(30deg);
+    margin-top: -.5rem; }
+  .pie:after {
+    -webkit-transform: rotate(60deg);
+    -moz-tranform: rotate(60deg);
+    -ms-tranform: rotate(60deg);
+    transform: rotate(60deg);
+    margin-top: -.5rem; }
 
 /*# sourceMappingURL=style.css.map */
