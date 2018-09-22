@@ -1,0 +1,25 @@
+* {
+  boder: 0;
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: #F3D8C7; }
+
+.container > * {
+  position: absolute; }
+
+.container {
+  margin: 0 auto;
+  width: 350px;
+  height: 180px;
+  transform: scale(0.7); }
+
+.plate {
+  background-color: #FFF;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100%;
+  box-shadow: 20px 15px 0 rgba(102, 102, 102, 0.3); }
+
+/*# sourceMappingURL=style.css.map */
