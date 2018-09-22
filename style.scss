@@ -80,29 +80,67 @@ body {
     height: 15px;
     background: #333;
     border-radius: 100%;
-    margin:{
-    	top:3rem;
-    	left: 2.5rem;
+    margin: {
+        top: 3rem;
+        left: 2.5rem;
     }
-    &:before,&:after{
-    content: '';
-    position: absolute;
-    background: #333; 
-   border-radius: 100%;
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        background: #333;
+        border-radius: 100%;
+    }
+    &:before {
+        width: 15px;
+        height: 15px;
+        margin-left: 3rem;
+    }
+    &:after {
+        width: 20px;
+        height: 20px;
+        border: 5px solid;
+        background: none;
+        border-color: transparent transparent #333 #333;
+        transform: rotate(-47deg);
+        margin-left: 1rem;
+    }
+}
 
+.cup {
+    background: #FFF;
+    border-radius: 100%;
+    width: 10rem;
+    height: 10rem;
+    margin: {
+        left: 15rem;
+        top: -10rem;
     }
-    &:before{
-    	width: 15px;
-    	height: 15px;
-    	margin-left: 3rem;
+    &:before,
+    &:after {
+        position: absolute;
+        content: '';
+        border-radius: 100%;
     }
-    &:after{
-    width: 20px;
-    height: 20px;
-    border: 5px solid;
-    background: none;
-    border-color: transparent transparent #333 #333;
-    transform: rotate(-47deg);
-    margin-left: 1rem;
+    &:before {
+        width: 140px;
+        height: 140px;
+        background: #FFF - 25;
+        margin: {
+            left: .6rem;
+            top: .6rem;
+        }
+    }
+    &:after {
+    		margin:{
+    			left: 1.7rem;
+    			top: 1.7rem;
+    		}
+            width: 110px;
+            height: 110px;
+            background: rgba(#604D53, 0.9);
+            border-radius: 100%;
+            box-shadow: inset 10px 5px 0 20px #604D53;
+    
     }
 }
