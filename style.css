@@ -49,4 +49,13 @@ body {
     transform: rotate(60deg);
     margin-top: -.5rem; }
 
+.filling {
+  z-index: 99;
+  position: absolute;
+  background: #F87756;
+  border-radius: 100%;
+  width: 9rem;
+  height: 9rem;
+  margin-left: .4rem; }
+
 /*# sourceMappingURL=style.css.map */
