@@ -66,13 +66,43 @@ body {
 }
 
 .filling {
-z-index: 99;
-position: absolute;
+    z-index: 99;
+    position: absolute;
     background: #F87756;
     border-radius: 100%;
     width: 9rem;
     height: 9rem;
-    margin-left:.4rem;
+    margin-left: .4rem;
 }
-.face{
+
+.face {
+    width: 15px;
+    height: 15px;
+    background: #333;
+    border-radius: 100%;
+    margin:{
+    	top:3rem;
+    	left: 2.5rem;
+    }
+    &:before,&:after{
+    content: '';
+    position: absolute;
+    background: #333; 
+   border-radius: 100%;
+
+    }
+    &:before{
+    	width: 15px;
+    	height: 15px;
+    	margin-left: 3rem;
+    }
+    &:after{
+    width: 20px;
+    height: 20px;
+    border: 5px solid;
+    background: none;
+    border-color: transparent transparent #333 #333;
+    transform: rotate(-47deg);
+    margin-left: 1rem;
+    }
 }
